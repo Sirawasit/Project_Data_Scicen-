@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #223;
+        padding: 0px;
+        margin: 0px;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        text-align: center;
+        width: 100%;
+        height: 60%;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    font-family: 'Open Sans', sans-serif;
+    height: 900px;
+}
+
+header{
+    background:url(/image/7270381.gif);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+}
+
+header .overlay{
+    width: 100%;
+    height: 100%;
+    padding: 150px;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient(135deg, #00000023, #0000006b);
+}
+
+h1{
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+h3,p {
+    margin-bottom: 30px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #333;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 10px  #333;
+    transition: all 0.4s ease;
+}
+
+button:hover{
+    box-shadow: 0 3px 20px #333;
+    cursor: pointer;
+}
+
+.box {
+    position: relative;
+    width: 1430px;
+    height: 740px;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+        border-radius: 0 0 85% 85% / 30%;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(255, 0, 174));
+    animation: rotate 4s linear infinite;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(0, 200, 255));
+    animation: rotate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.box span {
+    position: absolute;
+    inset: 8px;
+    border-radius: 16px;
+    z-index: 2;
+    
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
